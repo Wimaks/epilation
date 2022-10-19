@@ -24,24 +24,32 @@
                 <a href="#" class="header__logo">Курсы-Депиляции.рф</a>
 
                 <nav class="nav">
-                    <a href="#" class="nav__link">Новости</a>
-                    <a href="#" class="nav__link">Паста для шугаринга</a>
-                    <a href="#" class="nav__link">Контакты</a>
-                    <a href="#" class="nav__link">Меню</a>
+                    <div class="nav__item">
+                        <a href="#" class="nav__link">Новости</a>
+                        <button class="menu__btn">
+                            <img src="img/vector.png" alt="vector">
+                        </button>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#" class="nav__link">Паста для шугаринга</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </div>
+                    <!-- <div class="nav__item">
+                        <a href="#" class="nav__link">Меню</a>
+                    </div> -->
                 </nav>
                 <!-- /.nav -->
 
                 <div class="contacts">
                     <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
                     <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
-
-                    <!-- <a href="#" class="nav__link">
-                        <i class="fas fa-search"></i>
-                    </a> -->
                 </div>
                 <!-- /.contacts -->
                 <a href="#" class="nav__link search"><img src="img/search.png" alt=""></a>
             </div>
+            <!-- /.header__inner -->
         </div>
         <!-- /.container -->
     </header>
@@ -90,6 +98,7 @@
 
         </div>
     </section>
+    <!-- /.Courses -->
 
     <section class="section">
         <div class="container">
@@ -200,12 +209,19 @@
         <div class="container">
             <h2 class="section__logo section__logo--white">Давайте созвонимся!</h2>
 
-            <form action="" class="form"></form>
+            <form class="feedback" action="/" method="post">
+                <input class="feedback__input" type="name" name="name" placeholder="Имя">
+                <input class="feedback__input" type="phone" name="phone" placeholder="Телефон">
+                <input class="feedback__input" type="email" name="email" placeholder="Электронная почта">
+                <input class="feedback__input max" type="text" name="text" placeholder="Сообщение">
+                <button class="button" class="submit">Отправить</button>
+            </form>
             <!-- /.form -->
+
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.section -->
+    <!-- /.feedback -->
 
     <footer class="footer">
         <div class="container">
@@ -228,8 +244,9 @@
             </div>
         </div>
         <!-- /.container -->
-        </fo>
-        <!-- /.header -->
+    </footer>
+    <!-- /.footer -->
+
 </body>
 
 </html>
