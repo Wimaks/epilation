@@ -139,7 +139,7 @@ p {
 /* Intro */
 
 .intro {
-    background: url(/img/header.jpg) center no-repeat;
+    background: url(../img/header.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 840px;
@@ -217,7 +217,7 @@ p {
 }
 
 .section--form {
-    background: url(/img/form.jpg) center no-repeat;
+    background: url(../img/form.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -363,7 +363,7 @@ p {
 }
 
 .news__text:after {
-    content: url(/img/arrow.jpg);
+    content: url(../img/arrow.jpg);
     display: block;
     margin-top: 10px;
 }
@@ -633,7 +633,7 @@ p {
 }
 
 .card__text:after {
-    content: url(/img/arrow.jpg);
+    content: url(../img/arrow.jpg);
     display: block;
     margin-top: 10px;
 }
