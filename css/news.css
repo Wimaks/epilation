@@ -137,7 +137,7 @@
 }
 
 .article__content:hover .article__text:after {
-    content: url('img/arrow_purple.png');
+    content: url(img/arrow_purple.png);
 }
 
 .article__title {
@@ -159,7 +159,7 @@
 }
 
 .article__text:after {
-    content: url('img/arrow_2.png');
+    content: url(img/arrow_2.png);
     display: block;
     margin-top: 5px;
 }
