@@ -1,0 +1,35 @@
+/* Header */
+
+.article__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__time {
+    margin-right: 25px;
+}
+
+.header__time i,
+.header__date i {
+    color: #3A2E38;
+    font-size: 18px;
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__social img {
+    margin-right: 20px;
+}
+
+.header__social img:last-child {
+    margin-right: 0;
+}
+
+.test {
+    display: flex;
+
+}

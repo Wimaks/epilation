@@ -22,7 +22,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">Курсы-Депиляции.рф</a>
+                <a href="index.html" class="header__logo">Курсы-Депиляции.рф</a>
 
                 <nav class="nav">
                     <div class="nav__item">
@@ -37,9 +37,6 @@
                     <div class="nav__item">
                         <a href="#" class="nav__link">Контакты</a>
                     </div>
-                    <!-- <div class="nav__item">
-                        <a href="#" class="nav__link">Меню</a>
-                    </div> -->
                 </nav>
                 <!-- /.nav -->
 
@@ -48,7 +45,7 @@
                     <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
                 </div>
                 <!-- /.contacts -->
-                <a href="#" class="nav__link search"><img src="img/search.png" alt=""></a>
+                <a href="#" class="nav__link search"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <!-- /.header__inner -->
         </div>
@@ -127,17 +124,19 @@
             <h2 class="section__logo">Новости</h2>
 
             <div class="card">
-                <div class="card__item">
-                    <div class="card__header">
-                        <img class="card__photo" src="img/news/1.jpg" alt="">
-                        <div class="card__date">08.09.22</div>
+                <a href="news.html">
+                    <div class="card__item">
+                        <div class="card__header">
+                            <img class="card__photo" src="img/news/1.jpg" alt="">
+                            <div class="card__date">08.09.22</div>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title big">Шпательная техника</h3>
+                            <p class="card__text">Подробный разбор составов и тонкости применения всеми любимых
+                                Гидролатов...</p>
+                        </div>
                     </div>
-                    <div class="card__content">
-                        <h3 class="card__title big">Шпательная техника</h3>
-                        <p class="card__text">Подробный разбор составов и тонкости применения всеми любимых
-                            Гидролатов...</p>
-                    </div>
-                </div>
+                </a>
                 <div class="card__item">
                     <div class="card__header">
                         <img class="card__photo" src="img/news/2.jpg" alt="">
@@ -220,7 +219,7 @@
 
     <section class="section section--form">
         <div class="container">
-            <h2 class="section__logo section__logo--white">Давайте созвонимся!</h2>
+            <h2 class="feedback__logo">Давайте созвонимся!</h2>
 
             <form class="feedback" action="/" method="post">
                 <input class="feedback__input" type="name" name="name" placeholder="Имя">
@@ -260,6 +259,7 @@
     </footer>
     <!-- /.footer -->
 
+    <script src="https://kit.fontawesome.com/cc80bc16f7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
