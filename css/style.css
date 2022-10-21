@@ -16,6 +16,11 @@ i {
     font-size: 18px;
 }
 
+header i {
+    font-size: 18px;
+    color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -202,7 +207,12 @@ butt .intro__title span {
 }
 
 .button.article-page {
-    margin-bottom: 40px;
+    margin: 20px 0 40px 0;
+}
+
+.button.button--white.bn {
+    border: none;
+    margin-bottom: 20px;
 }
 
 .button.button--white {
@@ -214,6 +224,8 @@ butt .intro__title span {
 .button--white:hover {
     background: #724CFB;
     color: #fff;
+
+
 }
 
 /* Section */
@@ -232,6 +244,11 @@ butt .intro__title span {
 
 .section--form {
     background: url(../img/form.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section--bg {
+    background: url(../img/reviews.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -568,7 +585,7 @@ butt .intro__title span {
 }
 
 .card.article-page {
-    margin: 40px 0 80px 0;
+    margin: 40px 0 80px;
 }
 
 .card.popular {
