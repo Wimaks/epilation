@@ -7,6 +7,15 @@ body {
     color: #3A2E38;
 }
 
+a {
+    color: inherit;
+}
+
+i {
+    color: #3A2E38;
+    font-size: 18px;
+}
+
 h1,
 h2,
 h3,
@@ -159,7 +168,7 @@ p {
     word-wrap: break-word;
 }
 
-.intro__title span {
+butt .intro__title span {
     color: #724CFB;
 }
 
@@ -173,12 +182,14 @@ p {
 
 .button {
     padding: 16px 32px;
+    max-height: 52px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: #fff;
-    border: none;
+
+    border: 1px solid #724CF9;
     background: #724CF9;
     border-radius: 30px;
 
@@ -188,7 +199,10 @@ p {
 .button:hover {
     background: #fff;
     color: #3A2E38;
-    /* border: 1px solid #724CFB; */
+}
+
+.button.article-page {
+    margin-bottom: 40px;
 }
 
 .button.button--white {
@@ -487,6 +501,11 @@ p {
     border: 1px solid #724CFB;
 }
 
+.feedback__input:focus::placeholder {
+    color: transparent;
+    font-size: 0;
+}
+
 /* Footer */
 
 .footer {
@@ -548,6 +567,10 @@ p {
     text-decoration: none;
 }
 
+.card.article-page {
+    margin: 40px 0 80px 0;
+}
+
 .card.popular {
     justify-content: space-evenly;
 }
@@ -569,6 +592,10 @@ p {
 
 .card__item.solo {
     margin: 20px 0 40px 0;
+    border: 1px solid #FD6EB4;
+}
+
+.card__item.article-page {
     border: 1px solid #FD6EB4;
 }
 
