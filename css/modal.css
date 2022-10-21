@@ -187,4 +187,10 @@
 .comments__textarea::placeholder {
     font-weight: 500;
     font-size: 16px;
+
+}
+
+.comments__textarea:focus::placeholder {
+    color: transparent;
+    font-size: 0;
 }

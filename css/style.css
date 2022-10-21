@@ -96,9 +96,10 @@ p {
 
 .nav__link:hover {
     color: #724CFB;
+    opacity: .5;
 }
 
-.nav__link:after,
+/* .nav__link:after,
 .footer__link:after {
     content: "";
     display: block;
@@ -119,7 +120,7 @@ p {
 .nav__link:hover:after,
 .footer__link:hover:after {
     opacity: 1;
-}
+} */
 
 .nav__link.search {
     margin-left: 22px;
@@ -170,6 +171,80 @@ p {
     cursor: pointer;
 }
 
+/* Nav-toggle */
+
+.nav-toggle {
+    display: none;
+    width: 30px;
+    padding: 10px 0;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 27px;
+    right: 24px;
+    z-index: 1;
+}
+
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    transition: background .2s linear;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.nav-toggle__item:before {
+    top: -8px;
+}
+
+.nav-toggle__item:after {
+    top: 8px;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle.active .nav-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-2px);
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-3px);
+}
+
 /* /HEADER */
 
 /* MAIN */
@@ -180,12 +255,12 @@ p {
     background: url(../img/header.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 840px;
+    height: 100vh;
     padding: 0 15px;
 }
 
 .intro__inner {
-    padding: 107px 0 211px 0;
+    padding: 150px 0 211px 0;
     width: 100%;
 }
 
@@ -629,6 +704,10 @@ p {
     border: 1px solid #FD6EB4;
 }
 
+.card__item:hover {
+    border: 1px solid #FE6EB4;
+}
+
 .card__header {
     position: relative;
     margin-bottom: 20px;
@@ -715,4 +794,172 @@ p {
 
 .card__img {
     border-radius: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+    /* Header */
+
+    .header__logo {
+        margin-right: 20px;
+        font-size: 18px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .nav,
+    .nav__contacts {
+        font-size: 16px;
+    }
+
+    .nav__item {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .menu__btn:after {
+        width: 10px;
+        height: 10px;
+        right: 0;
+    }
+
+    .nav__link.search {
+        margin-left: 0;
+    }
+
+    .intro__title {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    /* Header */
+
+    .header__logo {
+        font-size: 18px;
+        padding-right: 5px;
+        padding-left: 7px;
+    }
+
+    /* Nav */
+
+    .nav__item {
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .nav,
+    .nav__contacts {
+        font-size: 15px;
+    }
+
+    .nav__contacts .nav__link {
+        margin-right: 10px;
+        padding: 0;
+        display: block;
+    }
+
+    .nav__contacts .nav__link:last-child {
+        margin-top: 5px;
+    }
+
+    .menu__btn:after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav__contacts .nav__link.search {
+        font-size: 15px;
+    }
+
+    /* Intro */
+
+    .intro__inner {
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .intro__text {
+        line-height: 22px;
+        margin: 0 auto 40px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    /* Header */
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header__logo {
+        padding: 5px 10px;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav__item {
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav__item:last-child {
+        margin: 0;
+    }
+
+    .nav__contacts .nav__link {
+        display: block;
+        font-size: 14px;
+    }
+
+    /* Intro */
+
+    .intro__inner {
+        text-align: center;
+    }
+
+    .intro__title {
+        max-width: 800px;
+        margin: 0 auto 20px;
+        font-size: 60px;
+    }
+
+    .intro__text {
+        font-size: 18px;
+        line-height: 20px;
+        width: 500px;
+        margin: 0 auto 40px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    /* Nav */
+
+    .nav,
+    .nav__contacts,
+    .nav__link.search {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #eb8b8d;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    /* Nav toggle */
+
+    .nav-toggle {
+        display: block;
+    }
 }
