@@ -645,7 +645,7 @@ p {
 
 .footer {
     background: #3A2E38;
-    padding: 40px 15px;
+    padding: 30px 15px;
     width: 100%;
 }
 
@@ -656,8 +656,8 @@ p {
 }
 
 .footer__logo {
-    margin-right: 84px;
     padding: 6px 10px;
+    margin-right: 60px;
 
     background: #fff;
     border-radius: 20px 0 0 0;
@@ -669,25 +669,6 @@ p {
     text-decoration: none;
     text-transform: uppercase;
     color: #FE6EB4;
-}
-
-.footer__link {
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    margin-right: 40px;
-    position: relative;
-}
-
-.contacts__link {
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    position: relative;
 }
 
 /* Cards */
