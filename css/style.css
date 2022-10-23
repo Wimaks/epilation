@@ -89,6 +89,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .header__logo {
@@ -215,9 +216,11 @@ p {
     cursor: pointer;
 
     position: absolute;
-    top: 25px;
-    right: 24px;
+    top: 50%;
+    right: 15px;
     z-index: 1;
+
+    transform: translateY(-50%);
 }
 
 .nav-toggle__item {
@@ -420,7 +423,8 @@ p {
 .courses__item {
     position: relative;
     padding-left: 100px;
-    margin-right: 109px;
+    /* margin-right: 109px; */
+    width: 31%;
 }
 
 .courses__item:last-child {
@@ -459,17 +463,17 @@ p {
 
 .learning__item {
     max-width: 34.4%;
+    margin-right: 25px;
 }
 
 .learning__images {
-    margin-top: -27px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.learning__img:first-child {
-    margin-left: 25px;
+.learning__img {
+    width: 24%;
 }
 
 /* News */
@@ -653,6 +657,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer__logo {
@@ -669,6 +674,80 @@ p {
     text-decoration: none;
     text-transform: uppercase;
     color: #FE6EB4;
+}
+
+.footer-toggle {
+    display: none;
+    width: 30px;
+    padding: 10px 0;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(50%);
+}
+
+.footer-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    transition: background .2s linear;
+}
+
+.footer-toggle__item:before,
+.footer-toggle__item:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.footer-toggle__item:before {
+    top: -8px;
+}
+
+.footer-toggle__item:after {
+    top: 8px;
+}
+
+.footer-toggle.active .footer-toggle__item {
+    background: none;
+}
+
+.footer-toggle.active .footer-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-2px);
+}
+
+.footer-toggle.active .footer-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-3px);
 }
 
 /* Cards */
@@ -700,6 +779,11 @@ p {
     background-color: #fff;
 
     position: relative;
+}
+
+.card__item.last {
+    background: url(../img/news/4.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .card__item.popular {
@@ -811,7 +895,8 @@ p {
 @media (max-width: 1440px) {
     /* Header */
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         margin-right: 20px;
         font-size: 18px;
         padding-right: 7px;
@@ -840,12 +925,19 @@ p {
     .nav__link.nav__image {
         margin-left: 0;
     }
+
+    /* Coruses */
+
+    .courses {
+        align-items: stretch;
+    }
 }
 
 @media (max-width: 1230px) {
     /* Header */
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         padding-right: 5px;
     }
 
@@ -885,6 +977,38 @@ p {
         line-height: 1.1;
         margin: 0 auto 40px;
     }
+
+    /* Courses */
+
+    .item__title {
+        height: 62px;
+    }
+
+    /* Learning */
+
+    .learning {
+        display: block;
+    }
+
+    .learning__item {
+        max-width: 50%;
+    }
+
+    .learning__images {
+        margin-top: 40px;
+    }
+
+    /* Cities */
+
+    .city__name {
+        font-size: 28px;
+    }
+
+    .city__name.long {
+        left: 55%;
+    }
+
+
 }
 
 @media (max-width: 992px) {
@@ -896,7 +1020,8 @@ p {
         padding-bottom: 20px;
     }
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         padding: 5px 3px 5px 7px;
         margin-right: 5px;
     }
@@ -939,13 +1064,78 @@ p {
         width: 500px;
         margin: 0 auto 40px;
     }
+
+    /* Courses */
+
+    .section--first {
+        border-bottom: 2px solid #f3f3f3;
+    }
+
+    .section__logo {
+        font-size: 28px;
+    }
+
+    .courses {
+        display: block;
+
+        margin-bottom: 40px;
+    }
+
+    .courses__item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .courses__item:last-child {
+        margin: 0;
+    }
+
+    .item__title {
+        font-size: 26px;
+        height: auto;
+    }
+
+    .item__text {
+        font-size: 18px;
+    }
+
+    /* Learning */
+
+    .learning {
+        display: block;
+    }
+
+    .learning__item {
+        max-width: 100%;
+    }
+
+    .learning__images {
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    .learning__img {
+        width: 50%;
+        border: 5px solid #fff;
+    }
+
+    /* Cities */
+
+    .city__item {
+        width: 49%;
+    }
+
+    .city__item:nth-last-child(-n+3) {
+        margin-bottom: 2%;
+    }
 }
 
 @media (max-width: 770px) {
 
     /* Header */
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         padding: 5px 10px;
     }
 
@@ -969,7 +1159,8 @@ p {
 
     /* Nav toggle */
 
-    .nav-toggle {
+    .nav-toggle,
+    .footer-toggle {
         display: block;
     }
 
@@ -978,13 +1169,31 @@ p {
     .intro__text {
         max-width: 480px;
     }
+
+    /* Cities */
+
+    .city__item {
+        width: 100%;
+    }
+
+    /* Feedback */
+
+    .feedback__input {
+        width: 49%;
+    }
+
+    .feedback__input.mail {
+        margin: 20px auto 0;
+    }
 }
 
 @media (max-width: 575px) {
     /* Header */
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         font-size: 16px;
+        padding-right: 5px;
     }
 
     /* Intro */
@@ -1002,6 +1211,53 @@ p {
     .button {
         font-size: 14px;
     }
+
+    /* Courses */
+
+    .section__logo {
+        font-size: 26px;
+    }
+
+    .courses__item {
+        padding: 0;
+    }
+
+    .courses__img {
+        position: unset;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .item__title {
+        font-size: 24px;
+    }
+
+    /* Learning */
+
+    .learning__img {
+        width: 100%;
+    }
+
+    /* Cities */
+
+    .city__name {
+        font-size: 26px;
+    }
+
+    .city__name.long {
+        left: 63%;
+    }
+
+    /* Feedback */
+
+    .feedback__input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feedback__input.mail {
+        margin: 0;
+    }
 }
 
 @media (max-width: 300px) {
@@ -1010,7 +1266,8 @@ p {
         max-width: 250px;
     }
 
-    .header__logo {
+    .header__logo,
+    .footer__logo {
         font-size: 14px;
         padding: 2px 5px 2px 10px;
     }
