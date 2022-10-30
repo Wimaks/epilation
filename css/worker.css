@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 0 15px 0;
+    align-items: center;
 }
 
 .reviews-worker__name {
@@ -41,6 +42,17 @@
 }
 
 .faq__image {
+    position: relative;
+    flex: 0 0 57%;
+}
+
+.faq__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
     border-radius: 30px 0 0 0;
 }
 
@@ -121,6 +133,16 @@
 .contacts__image {
     margin-right: 40px;
     position: relative;
+    flex: 0 0 40%;
+}
+
+.contacts__map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .contacts__location {
@@ -130,21 +152,140 @@
     z-index: 1000;
 }
 
-.contacts__location i {
-    color: #FE6EB4;
-    font-size: 50px;
-    text-decoration: none;
-    transition: color .2s linear;
-}
-
-.contacts__location:hover i {
-    color: #724CFB;
-}
-
 .contacts__description {
     margin: 20px 0 40px 0;
 }
 
+.contacts__address,
+.contacts__schedule,
+.contacts__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .contacts__schedule {
     margin: 15px 0;
+}
+
+.contacts__item {
+    flex: 0 0 auto;
+}
+
+.reviews-worker__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 1230px) {
+
+    /* Contacts */
+
+    .contacts {
+        display: block;
+    }
+
+    .contacts__image {
+        padding: 0 0 30% 0;
+        margin-right: 0;
+    }
+
+    .contacts__item {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    /* Blocks */
+
+
+    /* Reviews */
+
+    .reviews-worker {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .reviews-worker__item {
+        width: 44%;
+    }
+
+    /* Faq */
+
+    .faq {
+        display: block;
+    }
+
+    .faq__content {
+        margin-right: 0;
+    }
+
+    .faq__image {
+        padding: 0 0 50% 0;
+        margin-top: 40px;
+    }
+
+    .article__image--worker#worker__image {
+        margin-right: 0;
+        flex: 0 0 38.33333%;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .article__block-courses.worker {
+        display: block;
+    }
+
+    .block__course-item {
+        width: 100%;
+    }
+
+    .block__course-content {
+        padding: 3%;
+    }
+
+    .article__item.worker {
+        display: block;
+        width: 100%;
+    }
+
+    .article__image--worker#worker__image {
+        padding: 0 0 65% 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .block__title.fz {
+        font-size: 30px;
+    }
+
+    .reviews-worker__item {
+        width: 100%;
+    }
+
+    .faq-accordion__title {
+        max-width: 250px;
+    }
+
+    .faq__image {
+        padding: 0px 0 60% 0;
+    }
+
+    .button.mr {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .article__image--worker#worker__image {
+        padding: 20px 0 100% 0;
+    }
 }
