@@ -484,6 +484,15 @@
         font-size: 20px;
     }
 
+    .sidebar__subtitles a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .sidebar__subtitles:hover {
+        cursor: pointer;
+    }
+
     .sidebar__subtitles.small {
         width: fit-content;
     }
@@ -531,10 +540,6 @@
     }
 
     /* Blog */
-
-    /* .blog--popular {}
-
-    .blog--popular__item {} */
 
     .blog--popular__item:last-child {
         margin-top: 10px;

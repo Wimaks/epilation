@@ -53,6 +53,7 @@ i {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -976,9 +977,9 @@ p {
 .blog__arrow {
     position: absolute;
     max-width: 100%;
-    height: 3%;
+    height: 4%;
     left: 6.1538%;
-    bottom: 7.6923%;
+    bottom: 10.6923%;
 }
 
 .blog__link {
