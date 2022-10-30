@@ -4,13 +4,13 @@
     font-weight: 600;
     font-size: 24px;
     color: #3A2E38;
-    margin: 0;
+    margin: 40px 0 20px;
 }
 
 .block__title.big {
     font-size: 32px;
     font-weight: 700;
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
 }
 
 .block__title.fz {
@@ -49,7 +49,7 @@
     margin-bottom: 40px;
 }
 
-.sidebar__titles.news {
+.sidebar__titles.hidden {
     display: none;
 }
 
@@ -69,31 +69,27 @@
     border-radius: 30px 0 0 0;
 }
 
-.sidebar__item {
-    border-radius: 30px;
-    background-color: #fff;
-    border: 1px solid #FE6EB4;
-    margin: 20px 0 40px 0;
-}
-
 /* Sidebar Card */
 
 .sidebar__card--item {
-    width: 100%;
-    margin: 40px 0;
+    /* width: 100%; */
     border: 1px solid #FE6EB4;
     border-radius: 30px 30px 0 0;
 }
 
 .sidebar__card--header {
     position: relative;
+    padding: 0 0 36% 0;
 }
 
-.sidebar__card--photo {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.sidebar__card--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px 30px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .sidebar__card--content {
@@ -169,7 +165,7 @@
     background: #FE6EB4;
     border: 1px solid #FE6EB4;
     margin-bottom: 15px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 30px 0 0 0;
 }
 
@@ -226,6 +222,10 @@
     position: relative;
 }
 
+.article__content .block__title {
+    margin-top: 0;
+}
+
 .article__content:hover {
     background-color: rgba(114, 76, 251, 0.1);
     cursor: pointer;
@@ -233,12 +233,6 @@
 
 .article__content:hover .article__date {
     color: #724CFB;
-}
-
-.article__title {
-    margin: 10px 0;
-    font-weight: 600;
-    font-size: 24px;
 }
 
 .article__date {
@@ -474,7 +468,7 @@
         display: none;
     }
 
-    .sidebar__titles.news {
+    .sidebar__titles.hidden {
         display: flex;
     }
 
@@ -509,7 +503,7 @@
         flex: 0 0 43.333%;
     }
 
-    .sidebar__card--photo {
+    .sidebar__card--img {
         width: 100%;
         height: 100%;
         border-radius: 30px 0 0 0;
@@ -556,7 +550,7 @@
 
     /* Sidebar Titles */
 
-    .sidebar__titles.news {
+    .sidebar__titles.hidden {
         display: block;
     }
 
@@ -603,7 +597,7 @@
     }
 
     .sidebar__card--header {
-        padding: 0 0 150px 0;
+        padding: 0 0 36% 0;
     }
 
     .sidebar__card--content {
@@ -617,7 +611,7 @@
     /* Blog */
 
     .block__title.big {
-        padding: 40px 0;
+        padding: 40px 0 20px;
     }
 
     .blog--popular {
