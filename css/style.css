@@ -590,6 +590,12 @@ p {
     position: relative;
     width: 32%;
     margin-bottom: 2%;
+
+    transition: scale .5s linear;
+}
+
+.city__item:hover {
+    scale: 1.1;
 }
 
 .city__item:nth-last-child(-n+3) {
