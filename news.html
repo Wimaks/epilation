@@ -15,35 +15,42 @@
 <body>
 
     <div class="page">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="index.html" class="header__logo">Курсы-Депиляции.рф</a>
+                    <div class="header__logo">
+                        <a href="index.html" data-scroll="#intro">Курсы-Депиляции.рф</a>
+                    </div>
 
                     <nav class="nav">
-                        <div class="nav__item">
-                            <a href="news.html" class="nav__link news__btn">Новости</a>
-                            <button class="menu__btn">Button</button>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Паста для шугаринга</a>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Контакты</a>
-                        </div>
-                    </nav>
-                    <nav class="nav nav--contacts">
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
-                        </div>
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
-                        </div>
-                    </nav>
+                        <div class="nav__group nav-main">
+                            <div class="nav__item">
+                                <a href="#" class="nav__link news__btn" data-scroll="#news">Новости</a>
+                            </div>
 
-                    <nav class="nav nav--search">
-                        <div class="nav__item mg">
-                            <button href="#" class="btn__search"><img src="img/icons/search.png" alt=""></button>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Паста для шугаринга</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link" data-scroll="#contacts">Контакты</a>
+                            </div>
+                        </div>
+
+                        <div class="nav__group nav-contacts">
+                            <div class="nav__item">
+                                <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
+                            </div>
+                            <!-- </nav> -->
+                        </div>
+
+                        <!-- <nav class="nav nav--search"> -->
+                        <div class="nav__group nav-search">
+                            <div class="nav__item mg">
+                                <button href="#" class="btn__search"><img src="img/icons/search.png" alt=""></button>
+                            </div>
                         </div>
                     </nav>
                     <!-- /.nav -->
@@ -319,63 +326,53 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="index.html" class="footer__logo">Курсы-Депиляции.рф</a>
+                    <div class="footer__logo">
+                        <a href="index.html" data-scroll="#intro">Курсы-Депиляции.рф</a>
+                    </div>
+
 
                     <nav class="nav">
-                        <div class="nav__item">
-                            <a href="news.html" class="nav__link news__btn">Новости</a>
+                        <div class="nav__group nav-main">
+                            <div class="nav__item">
+                                <a href="#" class="nav__link news__btn" data-scroll="#news">Новости</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Паста для шугаринга</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </div>
                         </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Паста для шугаринга</a>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Контакты</a>
-                        </div>
-                    </nav>
-                    <nav class="nav nav--contacts">
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
-                        </div>
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
-                        </div>
-                    </nav>
 
+                        <div class="nav__group nav-contacts">
+                            <div class="nav__item">
+                                <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
+                            </div>
+                            <!-- </nav> -->
+                        </div>
 
-                    <button class="footer-toggle" type="button">
-                        <span class="footer-toggle__item">Menu</span>
-                    </button>
-                    <!-- /.footer__toggle -->
+                    </nav>
+                    <!-- /.nav -->
+
+                    <!-- <button class="nav-toggle footer-toggle" type="button">
+                        <span class="nav-toggle__item footer-toggle__item">Menu</span>
+                    </button> -->
+                    <!-- /.nav__toggle -->
                 </div>
-                <!-- /.footer__inner -->
+                <!-- /.header__inner -->
             </div>
             <!-- /.container -->
         </footer>
-        <!-- /.footer -->
-        <!-- <section class="section">
-            <div class="container">
-                <div class="test__item">
-                    <div class="test__image">
-                        <img src="img/article/1.jpg" alt="">
-                    </div>
-                    <div class="test__content">
-                        <div class="test__label">Заголовок</div>
-                        <div class="test__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi
-                            et.
-                            Consequatur nostrum voluptatum accusamus veniam, ullam perspiciatis numquam, velit aperiam
-                            facilis
-                            rem libero corporis minus doloremque quidem vitae. Numquam? Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Magni ipsum quisquam nobis ex eum dolores odit voluptate
-                            exercitationem qui accusantium. Repellendus dolor vero vel consectetur quos nulla doloremque
-                            temporibus? Architecto?</div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <!-- /.header -->
 
     </div>
 
-    <script src="https://kit.fontawesome.com/cc80bc16f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

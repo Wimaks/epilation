@@ -61,6 +61,11 @@
     color: #fff;
 }
 
+.sidebar__subtitles:hover {
+    cursor: pointer;
+    background-color: rgba(254, 110, 180, 0.8);
+}
+
 .sidebar__subtitles.active {
     background: #FE6EB4;
 }

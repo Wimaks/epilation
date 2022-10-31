@@ -13,35 +13,42 @@
 
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="index.html" class="header__logo">Курсы-Депиляции.рф</a>
+                    <div class="header__logo">
+                        <a href="index.html" data-scroll="#intro">Курсы-Депиляции.рф</a>
+                    </div>
 
                     <nav class="nav">
-                        <div class="nav__item">
-                            <a href="news.html" class="nav__link news__btn" target="_blank">Новости</a>
-                            <button class="menu__btn">Button</button>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Паста для шугаринга</a>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Контакты</a>
-                        </div>
-                    </nav>
-                    <nav class="nav nav--contacts">
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
-                        </div>
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
-                        </div>
-                    </nav>
+                        <div class="nav__group nav-main">
+                            <div class="nav__item">
+                                <a href="#" class="nav__link news__btn" data-scroll="#news">Новости</a>
+                            </div>
 
-                    <nav class="nav nav--search">
-                        <div class="nav__item mg">
-                            <button href="#" class="btn__search"><img src="img/icons/search.png" alt=""></button>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Паста для шугаринга</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link" data-scroll="#contacts">Контакты</a>
+                            </div>
+                        </div>
+
+                        <div class="nav__group nav-contacts">
+                            <div class="nav__item">
+                                <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
+                            </div>
+                            <!-- </nav> -->
+                        </div>
+
+                        <!-- <nav class="nav nav--search"> -->
+                        <div class="nav__group nav-search">
+                            <div class="nav__item mg">
+                                <button href="#" class="btn__search"><img src="img/icons/search.png" alt=""></button>
+                            </div>
                         </div>
                     </nav>
                     <!-- /.nav -->
@@ -59,7 +66,7 @@
         <!-- /.header -->
 
         <!-- intro -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <h1 class="intro__title">Обучение депиляции в вашем городе<br> <span>Online</span></h1>
@@ -128,9 +135,9 @@
         </section>
         <!-- /.Learning -->
 
-        <section class="section section--gray">
+        <section class="section section--gray" id="news">
             <div class="container">
-                <h2 class="section__logo"><a href="news.html">Новости</a></h2>
+                <h2 class="section__logo">Новости</h2>
 
                 <div class="blog">
                     <div class="blog__item">
@@ -205,7 +212,7 @@
 
                     <div class="blog__item">
                         <div class="blog__test">
-                            <a class="blog__link" href="#">Смотреть все новости</a>
+                            <a class="blog__link" href="news.html">Смотреть все новости</a>
                             <img src="img/news/4.jpg" alt="" class="blog__image">
                         </div>
                     </div>
@@ -280,7 +287,7 @@
         </section>
         <!-- /.section -->
 
-        <section class="section section--form">
+        <section class="section section--form" id="contacts">
             <div class="container">
                 <h2 class="feedback__logo">Давайте созвонимся!</h2>
 
@@ -301,32 +308,40 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="index.html" class="footer__logo">Курсы-Депиляции.рф</a>
+                    <div class="footer__logo">
+                        <a href="index.html" data-scroll="#intro">Курсы-Депиляции.рф</a>
+                    </div>
+
 
                     <nav class="nav">
-                        <div class="nav__item">
-                            <a href="news.html" class="nav__link news__btn">Новости</a>
+                        <div class="nav__group nav-main">
+                            <div class="nav__item">
+                                <a href="#" class="nav__link news__btn" data-scroll="#news">Новости</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Паста для шугаринга</a>
+                            </div>
+                            <div class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </div>
                         </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Паста для шугаринга</a>
-                        </div>
-                        <div class="nav__item">
-                            <a href="#" class="nav__link">Контакты</a>
-                        </div>
-                    </nav>
-                    <nav class="nav nav--contacts">
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
-                        </div>
-                        <div class="nav__item mg">
-                            <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
-                        </div>
-                    </nav>
 
+                        <div class="nav__group nav-contacts">
+                            <div class="nav__item">
+                                <a class="nav__link" href="tel:+79531201027">+7 953 120 10 27</a>
+                            </div>
+                            <div class="nav__item">
+                                <a class="nav__link" href="mailto:admin@курсы-депиляции.рф">admin@курсы-депиляции.рф</a>
+                            </div>
+                            <!-- </nav> -->
+                        </div>
 
-                    <button class="footer-toggle" type="button">
-                        <span class="footer-toggle__item">Menu</span>
-                    </button>
+                    </nav>
+                    <!-- /.nav -->
+
+                    <!-- <button class="nav-toggle footer-toggle" type="button">
+                        <span class="nav-toggle__item footer-toggle__item">Menu</span>
+                    </button> -->
                     <!-- /.nav__toggle -->
                 </div>
                 <!-- /.header__inner -->
@@ -336,7 +351,9 @@
         <!-- /.header -->
 
     </div>
-    <script src="https://kit.fontawesome.com/cc80bc16f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -35,8 +35,13 @@
     justify-content: space-between;
 }
 
-.header__social img {
+.header__social a {
     margin-right: 20px;
+}
+
+.header__social a:hover {
+    filter: hue-rotate(300deg);
+    cursor: pointer;
 }
 
 .header__social img:last-child {
@@ -56,6 +61,7 @@
 .article__content.article__content--modal {
     padding: 0;
     background: none;
+    cursor: auto;
 }
 
 .article__content.article__content--worker {
