@@ -83,6 +83,7 @@
     position: relative;
 
     cursor: pointer;
+
 }
 
 .faq-accordion__header:after {
@@ -114,12 +115,14 @@
 .faq-accordion__content {
     padding: 20px 0;
     display: none;
+    max-width: 80%;
 }
 
 .faq-accordion__title {
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
+    max-width: 80%;
 }
 
 /* Contacts */
@@ -166,6 +169,15 @@
 
 .contacts__schedule {
     margin: 15px 0;
+}
+
+.contacts__phone img:hover {
+    filter: hue-rotate(300deg);
+    cursor: pointer;
+}
+
+.test:hover {
+    filter: hue-rotate(300deg);
 }
 
 .contacts__item {
@@ -233,6 +245,10 @@
     .article__image--worker#worker__image {
         margin-right: 0;
         flex: 0 0 38.33333%;
+    }
+
+    .faq-accordion__content {
+        max-width: 70%;
     }
 
 }

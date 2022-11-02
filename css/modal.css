@@ -40,7 +40,7 @@
 }
 
 .header__social a:hover {
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(150deg);
     cursor: pointer;
 }
 

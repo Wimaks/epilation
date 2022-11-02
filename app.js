@@ -66,8 +66,14 @@ $(document).ready(function () {
             });
         };
 
-        // $('.sidebar__subtitles').toggleClass('active'); // появление меню при нажатии на бургер
-        // $(this).toggleClass('active'); // изменение меню бургер при открытии меню
     });
+
+    //* Accordeon active
+
+    $('.faq-accordion__item').on('click', function (event) {
+        event.preventDefault();
+
+        $(this).toggleClass('active');
+    })
 
 })
